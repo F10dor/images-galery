@@ -1,6 +1,9 @@
 import React from "react";
 import { Jumbotron, Button } from "react-bootstrap";
 
+// welcome component will rendered as placeholder in the app if images array is empty
+// Jumbotron is an hero placeholder component generated with bootstrap.
+
 const Welcome = () => (
   <Jumbotron>
     <h1>Images Gallery</h1>
