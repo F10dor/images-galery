@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## In order to use app create .env.local file
+
+In the project -> src folder create .env.local file
+
+Content of file should be as below:
+REACT_APP_UNSPLASHKEY=<your API Access Key from Unsplash>
+
 ## Available Scripts
 
 In the project directory, you can run:

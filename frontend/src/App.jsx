@@ -1,16 +1,16 @@
-import { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col } from "react-bootstrap";
-import Header from "./components/Header";
-import Search from "./components/Search";
-import ImageCard from "./components/ImageCard";
-import Welcome from "./components/Welcome";
+import { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Row, Col } from 'react-bootstrap';
+import Header from './components/Header';
+import Search from './components/Search';
+import ImageCard from './components/ImageCard';
+import Welcome from './components/Welcome';
 
 const UNSPLASH_KEY = process.env.REACT_APP_UNSPLASH_KEY;
 
 const App = () => {
   // using useState and deconstructuring of the state variables
-  const [word, setWord] = useState("");
+  const [word, setWord] = useState('');
   const [images, setImages] = useState([]);
 
   // fetching state variables to test valuse
@@ -28,7 +28,7 @@ const App = () => {
       .catch((err) => {
         console.log(err);
       });
-    setWord("");
+    setWord('');
   };
 
   const handleDeleteImage = (id) => {
