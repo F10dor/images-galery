@@ -28,3 +28,4 @@
 # Mongo and Mongo-express setup Summary
 
 - at this stage MongoDB and mongo-express connect to each other, but not connected to API
+- configurations are set in docker-compose.yml file
