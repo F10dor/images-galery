@@ -6,5 +6,15 @@
     ],
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
+    },
+    "python.pythonPath": "/api/.nenv/bin/python3",
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.pycodestyleArgs": [
+        "--max-line-length=92"
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.formatting.provider": "black",
+    "[python]": {
+        "editor.formatOnSave": true
     }
 }
