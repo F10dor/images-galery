@@ -23,3 +23,8 @@
 ## Save "image" in the database after the client POST request to "/images"
 ## Test GET and POST "/images" in Postman
 ## Add save image Button and get all saved images functionality in the "frontend"
+
+
+# Mongo and Mongo-express setup Summary
+
+- at this stage MongoDB and mongo-express connect to each other, but not connected to API
