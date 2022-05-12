@@ -29,3 +29,13 @@
 
 - at this stage MongoDB and mongo-express connect to each other, but not connected to API
 - configurations are set in docker-compose.yml file
+
+# Communication between Docker containers
+# docker-compose create bridge network automatically
+## 3000             5050                            8081
+## frontend  <--->  api   <--->  mongo   <--->    mongo-express
+## 172.22.0.5     172.22.0.3    172.22.0.2        172.22.0.4
+##                          docker
+##                       172.22.0.0/16            
+
+## to compose containers run in images-galery location -> docker-compose -d to compose in deattached mode
