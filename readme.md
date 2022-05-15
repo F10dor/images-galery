@@ -38,4 +38,4 @@
 ##                          docker
 ##                       172.22.0.0/16            
 
-## to compose containers run in images-galery location -> docker-compose -d to compose in deattached mode
+## to compose containers run in images-galery location -> "docker-compose -d" to compose in deattached mode

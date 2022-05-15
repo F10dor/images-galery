@@ -18,6 +18,7 @@ mongo_client = MongoClient(
 
 
 def insert_test_document():
+    """ Insert sample document to the test_collection in the test db"""
     db = mongo_client.test
     test_collection = db.test_collection
     res = test_collection.insert_one({"name": "Fiodor", "Developer": True})
