@@ -1,3 +1,4 @@
+# Images will not be saved as files in database doue to Unsplash policy, only URLs wil be saved.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

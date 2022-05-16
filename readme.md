@@ -62,3 +62,11 @@
       console.log(error);
     }
     console.log('clearing search from');
+
+# Delete saced images, Spinner, image Author information and Notifications
+## Implementation Steps:
+##### Add Delete method to the images endpoint in API service
+#### When Delete button is pressed send DELETE image request to the inages endpoint and after successful removal delete image from state
+#### Show spinner in the middle of page while saved images are being retrived from the database
+#### In the footer of each Image Card add information about image author and link to the author portfolio (if available)
+#### In the frontend app show corner notifications for images actions, for example "Image was saved" or "Image was deleted"
