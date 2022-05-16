@@ -39,3 +39,26 @@
 ##                       172.22.0.0/16            
 
 ## to compose containers run in images-galery location -> "docker-compose -d" to compose in deattached mode
+
+# May 15 2022 replased fetch request with axios request
+## Was :
+##### fetch get request
+    // fetch(`${API_URL}/new-image?query=${word}`)
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     console.log('adding found image to the state');
+    //     setImages([{ ...data, title: word }, ...images]);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
+## Changed to :
+##### axios get request
+    try {
+      const res = await axios.get(`${API_URL}/new-image?query=${word}`);
+      console.log('adding found image to the state');
+      setImages([{ ...res.data, title: word }, ...images]);
+    } catch (error) {
+      console.log(error);
+    }
+    console.log('clearing search from');
