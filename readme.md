@@ -70,3 +70,10 @@
 #### Show spinner in the middle of page while saved images are being retrived from the database
 #### In the footer of each Image Card add information about image author and link to the author portfolio (if available)
 #### In the frontend app show corner notifications for images actions, for example "Image was saved" or "Image was deleted"
+
+### Delete single image workflow:
+1 - In the API service create new endpoint /images/<image_id> and enable only DLETE method for it
+2 - In the view function specify single patameter image_id which value will set to the value of image_id from the URL when requst from the client is received , For Example, When request is sent to the /images/1234 value of the image_id paramether in the view function will be 1234
+3 - Use delete_one mongo client method to send delete request to the databese, You should delete image by _id
+4 - After the image removal send response to the client with staus code 200 and body which contains object with single key - deleted_id which is _id of the deleted image
+5 - Test DELETE method using Postman
